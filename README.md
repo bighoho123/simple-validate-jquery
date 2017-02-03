@@ -4,6 +4,7 @@
 
 - [jQuery](https://code.jquery.com/jquery-3.1.0.js)
 - [Tether](https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js)
+
 Both are not included in this plugin.
 
 ## Usage

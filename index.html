@@ -11,7 +11,7 @@
 
 <body>
     <div style='max-width:600px;height:2500px;margin:0 auto'>
-        <h1>Simple Validate jQuery Plugin</h1>
+        <h1>Simple Validate jQuery Plugin Sample</h1>
         <form id='form'>
             <input type="text" name='email'>
             <button>Submit</button>
@@ -23,6 +23,17 @@
     </template>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="../dist/simplevalidate.js"></script>
+    <script type="text/javascript">
+    var foo = $('#form').simplevalidate()
+        .simplevalidate('addRules', {
+            condition: function() {
+                return false;
+            },
+            target: "#error-target",
+            template: "#my-template"
+        })
+        .simplevalidate('getRules');
+    </script>
 </body>
 
 </html>

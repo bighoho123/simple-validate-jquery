@@ -124,14 +124,4 @@
 
 })(jQuery);
 
-var foo = $('#form').simplevalidate()
-    .simplevalidate('addRules', {
-        condition: function() {
-            return false;
-        },
-        target: "#error-target",
-        template: "#my-template"
-    })
-    .simplevalidate('getRules');
 
-console.log(foo);
